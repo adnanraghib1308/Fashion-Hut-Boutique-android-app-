@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".checkOrder"
+    android:background="@drawable/back4">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/l11"
+        android:gravity="center"
+        app:cardCornerRadius="30dp"
+
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter Bill Number"
+            android:id="@+id/findBillNumber"
+            android:gravity="center"
+            android:textColorHint="#D3B3B3"
+            android:background="#E62C488E"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="30dp"
+        android:id="@+id/l12"
+        android:layout_below="@+id/l11"
+        app:cardPreventCornerOverlap="true">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Check"
+            android:id="@+id/buttonCheck"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#972020"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="40dp"
+        android:layout_below="@+id/l12"
+        android:visibility="invisible"
+        android:id="@+id/l13">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#57CDA6"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                >
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Bill Number:"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Orders"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:id="@+id/billNumberText"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Amount:"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="No Orders"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:id="@+id/amountText"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Booking Date"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Orders"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:id="@+id/bookText"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Date"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Orders"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:id="@+id/delText"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Order Status"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Orders"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:id="@+id/statusText"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/l14"
+        android:layout_below="@+id/l13">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Add order"
+            android:id="@+id/buttonAdd"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+</RelativeLayout>

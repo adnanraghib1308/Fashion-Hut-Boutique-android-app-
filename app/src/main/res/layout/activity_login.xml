@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/back4"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:gravity="center"
+                android:id="@+id/linear1"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+                 <androidx.cardview.widget.CardView
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    app:cardCornerRadius="400dp"
+                    app:cardPreventCornerOverlap="false"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="220dp"
+                        android:layout_height="220dp">
+                        <ImageView
+                            android:id="@+id/profilePicture"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:cropToPadding="false"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/defaultpp"
+                             />
+                        <ProgressBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="invisible"
+                            android:id="@+id/pbar"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Change"
+                    android:id="@+id/changeProfilePic"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/linear1"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:id="@+id/linear2"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="Profile Infoarmation"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/linear2"
+                android:id="@+id/linear3"
+                android:layout_marginTop="10dp"
+
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="Name:"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="Not Available"
+                    android:id="@+id/name"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#000"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/linear3"
+                android:id="@+id/linear4"
+                android:layout_marginTop="10dp"
+
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="Email:"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="Not Available"
+                    android:id="@+id/email"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#000"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/linear4"
+                android:id="@+id/linear5"
+
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="Phone No:"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="Not Available"
+                    android:id="@+id/phone"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#000"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/linear5"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/logoutButton"
+                    android:text="Logout"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
