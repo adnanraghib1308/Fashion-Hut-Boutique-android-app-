@@ -2,7 +2,7 @@
 
 ## About
 
-This is a small business application for a boutique shop. With this application customers of the shop can track their orders or see its status. For more information see the screen shots.
+This is a small business application for a boutique shop. With this application customers of the shop can track their orders or see its status. For more information see the screenshots.
 
 ## Snapshots 
 
